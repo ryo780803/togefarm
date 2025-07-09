@@ -15,12 +15,12 @@ a:hover{color: rgb(251, 187, 161); font-size: 1.1rem;}
     top: 160px; 
     height: 600px; 
     object-fit: cover; 
-    animation: img-change 15s infinite;
+    animation: img-change 10s infinite;
 
     }
 .back:nth-child(1){animation-delay: 0s;} 
 .back:nth-child(2){animation-delay: 5s;}
-.back:nth-child(3){animation-delay: 10s;}
+/* .back:nth-child(3){animation-delay: 10s;} */
 
 .togekun{position: absolute; top: 50px; left: 95px; object-fit: contain;}
 
