@@ -14,22 +14,28 @@
 <body>
     <header>
         <div class="room1">
-            <img class="logo" src="images/d4347c6d-07b4-4f82-bd1c-6ba9f15cb841.png.PNG" alt="" width="10%" height="20%">
+            <h1 class="logo">TOUGE FARM</h1>
+            <img src="images/pomu.PNG" alt="" class="pomu" width="70px" height="70px">
+            <img src="images/pocha.PNG" alt="" class="pocha" width="70px" height="70px">
 
-            <ul class="ul1">
-                <li class="li"><a href="#to1">峠ファームの生い立ち</a></li>
-                <li class="li"><a href="#to2">農業に対する想い</a></li>
-                <li class="li"><a href="#to3">ここが自慢</a></li>
-                <li class="li"><a href="#to4">目指す未来</a></li>
+            <img src="images/Photoroom_20250724_202011.PNG" alt="" width="40px" height="40px" class="pomupocha" id="push">
+            <ul class="ul1" id="slide">
+                <li class="li" id="move"><a href="#to1">峠ファームの生い立ち</a></li>
+                <li class="li" id="move"><a href="#to2">農業に対する想い</a></li>
+                <li class="li" id="move"><a href="#to3">ここが自慢</a></li>
+                <li class="li" id="move"><a href="#to4">目指す未来</a></li>
             </ul>
     
         </div>
-        <img src="images/tomato.jpeg" alt="" class="back">
-        <img src="images/tomato1.jpg" alt="" class="back">
+        <img src="images/aile2.JPG" alt="" class="back">
+        <img src="images/habetoma.JPG" alt="" class="back">
+        <img src="images/togemama.JPG" alt="" class="back">
         <!-- <img src="images/IMG_3374.JPG" alt="" class="back"> -->
 
         <!-- <img src="images/togekunn.PNG" alt="" class="togekun" width="10%" height="50%"> -->
     </header>
+
+    <div id="overlay"></div>
 
     <section class="section1" id="to1">
         <h1 class="h12">峠ファームの生い立ち</h1>
@@ -47,7 +53,7 @@
         <p class="text3">峠さんは祖父の代から続く農家に生まれ、自然とともに生きる道を選びました。独立後、地元高山の気候を活かしてトマト栽培に挑戦。試行錯誤を重ね、甘く濃厚な味わいが評判となり、「峠ファーム」として多くの人に親しまれる存在となりました。</p>
     </section>
 
-    <section class="section3" id="to3">
+    <section class="section3" id="to4">
         <h1 class="h14">目指す未来</h1>
         <p class="text3">峠さんは祖父の代から続く農家に生まれ、自然とともに生きる道を選びました。独立後、地元高山の気候を活かしてトマト栽培に挑戦。試行錯誤を重ね、甘く濃厚な味わいが評判となり、「峠ファーム」として多くの人に親しまれる存在となりました。</p>
     </section>
@@ -62,5 +68,32 @@
         <img src="images/トマト.png" alt="" class="havetomato" width="40%" height="auto">
     </footer>
     
+
+
+    <script>
+        const push = document.getElementById('push');
+        const slide = document.getElementById('slide');
+        const overlay = document.getElementById('overlay');
+        const move = document.getElementById('move');
+
+
+        push.addEventListener('click', () => {
+            slide.classList.add('open');
+            overlay.classList.add('show');
+        });
+
+        overlay.addEventListener('click',() => {
+            slide.classList.remove('open');
+            overlay.classList.remove('show');
+        });
+
+        move.addEventListener('click', () => {
+            slide.classList.remove('open');
+            overlay.classList.remove('show');
+        });
+
+
+
+    </script>
 </body>
 </html>

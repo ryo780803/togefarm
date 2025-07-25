@@ -2,25 +2,27 @@
 
 *{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Times New Roman', Times, serif;}
 .li{list-style: none;}
-.logo{margin-left: 30px; padding-top: 30px;}
+.logo{font-family:Arial, Helvetica, sans-serif; margin-top: 40px; margin-left: 50px; position: relative;}
+.pomu{position: absolute; left: 230px; top: 10px;}
+.pocha{position: absolute; top: 70px; left: 0;}
 header{position: relative; max-width: 100%; padding-top: 20px;}
 .room1{display: flex; justify-content: space-between;}
-.ul1{writing-mode: vertical-lr; letter-spacing: 8px; line-height: 35px; margin-right: 40px; font-size: 1rem;}
-a{transition: all .3s ease-in-out; color: black; text-decoration: none;}
+.ul1{writing-mode: vertical-lr; letter-spacing: 8px; line-height: 35px; margin-right: 40px; font-size: 1rem; z-index: 100;}
+a{transition: all .3s ease-in-out; color: black; text-decoration: none; z-index: 20;}
 a:hover{color: rgb(251, 187, 161); font-size: 1.1rem;}
 .back{
     opacity: 0; 
-    width: 82%; 
+    width: 82%;
     position: absolute; 
     top: 160px; 
-    height: 600px; 
+    height: 800px; 
     object-fit: cover; 
-    animation: img-change 10s infinite;
+    animation: img-change 15s infinite;
 
     }
 .back:nth-child(1){animation-delay: 0s;} 
 .back:nth-child(2){animation-delay: 5s;}
-/* .back:nth-child(3){animation-delay: 10s;} */
+.back:nth-child(3){animation-delay: 10s;}
 
 .togekun{position: absolute; top: 50px; left: 95px; object-fit: contain;}
 
@@ -33,7 +35,7 @@ a:hover{color: rgb(251, 187, 161); font-size: 1.1rem;}
     100%{opacity: 0;}
 }
 .section1{
-    margin-top: 550px;
+    margin-top: 770px;
     max-width: 100%;
     height: auto;
 }
@@ -56,8 +58,42 @@ a:hover{color: rgb(251, 187, 161); font-size: 1.1rem;}
 .h14{font-size: 2.5rem; text-align: center; margin-bottom: 50px;}
 .text3{font-size: 1.3rem; line-height: 40px; width: 70%; margin: 0 auto;}
 
-footer{position: relative; height: auto; width: 100%; background-color: rgb(242, 183, 183); padding: 0; display: flex;}
+footer{position: relative; height: auto; width: 100%; background-color: rgba(141, 185, 125, 0.87); padding: 0; display: flex;}
 .ulF{width: 80%; margin-left: 20%; line-height: 50px; margin-top: 40px; padding-bottom: 40px;}
 li{list-style: none;}
 .liF{font-size: 1.2rem;}
-.havetomato{position: absolute; top: -40px; right: 0;}
+.havetomato{position: absolute; top: -120px; right: 0; width: 400px; height: 400px;}
+
+@media (max-width: 460px) {
+    .room1{position: relative; margin-bottom: 0; display: block;}
+    .logo{font-size: .8rem;}
+    .pomupocha{z-index: 1000; position: absolute; width: 80px; height: auto; right: 10px;}
+    .pomu,.pocha{width: 50px; height: 50px;}
+    .pomu{left: 130px; top: -35px;}
+    .pocha{left: 10px; top: 0px;}
+    .back{position: absolute; width: 100%; object-fit: cover; height: 400px;}
+    .section1{margin-top: 70px;}
+    .h12,.h13,.h14{font-size: 25px;}
+    .text1,.text2,.text3{font-size: 15px;}
+    .liF,.liF1,.liF2,.liF3{font-size: 15px;}
+    .havetomato{width: 40%; height: 40%; object-fit: cover; top:166px;}
+     a{text-align: center; font-size: 22px; color: whitesmoke; width: 100%; display: inline-block;}
+    .ul1{margin-top: 105px; width: 100%; z-index: 10; transition: all .3s ease-in-out; writing-mode: horizontal-tb; visibility: hidden; text-align: left; line-height: 90px;}
+    .ul1.open{visibility: visible; color: aliceblue; z-index: 100; position: absolute;}
+    #overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 900px;
+        background-color: rgba(0,0,0,0.6);
+        z-index: 0;
+        display: none;
+    }
+    #overlay.show{
+        display: block;
+        z-index: 90;
+        transition:  all .5s ease-in-out;
+    }
+    .ul1.close{z-index: 100; visibility: hidden;}
+}
