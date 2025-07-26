@@ -21,9 +21,9 @@
             <img src="images/pomupocha.png" alt="" width="40px" height="40px" class="pomupocha" id="push">
             <ul class="ul1" id="slide">
                 <li class="li" id="move"><a href="#to1">峠ファームの生い立ち</a></li>
-                <li class="li" id="move"><a href="#to2">農業に対する想い</a></li>
-                <li class="li" id="move"><a href="#to3">ここが自慢</a></li>
-                <li class="li" id="move"><a href="#to4">目指す未来</a></li>
+                <li class="li" id="move1"><a href="#to2">農業に対する想い</a></li>
+                <li class="li" id="move2"><a href="#to3">ここが自慢</a></li>
+                <li class="li" id="move3"><a href="#to4">目指す未来</a></li>
             </ul>
     
         </div>
@@ -75,6 +75,10 @@
         const slide = document.getElementById('slide');
         const overlay = document.getElementById('overlay');
         const move = document.getElementById('move');
+        const move1 = document.getElementById('move1');
+        const move2 = document.getElementById('move2');
+        const move3 = document.getElementById('move3');
+
 
 
         push.addEventListener('click', () => {
@@ -92,6 +96,18 @@
             overlay.classList.remove('show');
         });
 
+        move1.addEventListener('click', () => {
+            slide.classList.remove('open');
+            overlay.classList.remove('show');
+        });
+        move2.addEventListener('click', () => {
+            slide.classList.remove('open');
+            overlay.classList.remove('show');
+        });
+        move3.addEventListener('click', () => {
+            slide.classList.remove('open');
+            overlay.classList.remove('show');
+        });
 
 
     </script>
