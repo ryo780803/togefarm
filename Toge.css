@@ -76,7 +76,13 @@ li{list-style: none;}
     .back{position: absolute; width: 100%; object-fit: cover; height: 500px;}
     .section1{margin-top: 280px;}
     .h12,.h13,.h14{font-size: 25px;}
-    .h12{margin-top: 50px;}
+    .h12::before{
+        content: "";
+        display: block;
+        height: 80px;
+        margin-top: -80px;
+        visibility: hidden;
+    }
     .text1,.text2,.text3{font-size: 15px;}
     .liF,.liF1,.liF2,.liF3{font-size: 15px;}
     .havetomato{width: 40%; height: 40%; object-fit: cover; top:166px;}
