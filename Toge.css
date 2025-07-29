@@ -100,6 +100,9 @@ li{list-style: none;}
         margin-top: -320px;
         visibility: hidden;
     }
+    [id] {
+        scroll-margin-top: 80px;
+    }
 
     .h12,.h13,.h14{font-size: 25px;}
     .h12::before{
