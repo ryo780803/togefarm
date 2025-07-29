@@ -108,6 +108,21 @@ li{list-style: none;}
         margin-top: -100px;
         visibility: hidden;
     }
+    .h13::before{
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+    .h14::before{
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
     .text1,.text2,.text3{font-size: 15px;}
     .liF,.liF1,.liF2,.liF3{font-size: 15px;}
     .havetomato{width: 40%; height: 40%; object-fit: cover; top:166px;}
