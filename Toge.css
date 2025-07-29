@@ -74,7 +74,8 @@ li{list-style: none;}
     .pomu{left: 130px; top: -35px;}
     .pocha{left: 10px; top: 0px;}
     .back{position: absolute; width: 100%; object-fit: cover; height: 500px;}
-    .section1{margin-top: 280px;}
+    .section1{display: block; margin-top: 290px;}
+    .section1.open{margin: 0;}
     .section1::before{content: "";
         display: block;
         height: 80px;
@@ -134,7 +135,7 @@ li{list-style: none;}
         top: 0;
         left: 0;
         width: 100vw;
-        height: 900px;
+        height: 800px;
         background-color: rgba(0,0,0,0.8);
         z-index: 0;
         display: none;
