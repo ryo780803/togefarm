@@ -81,6 +81,25 @@ li{list-style: none;}
         margin-top: -80px;
         visibility: hidden;
     }
+    .section2::before{content: "";
+        display: block;
+        height: 80px;
+        margin-top: -80px;
+        visibility: hidden;
+    }
+    .section3::before{content: "";
+        display: block;
+        height: 80px;
+        margin-top: -80px;
+        visibility: hidden;
+    }
+    .section3::before{content: "";
+        display: block;
+        height: 80px;
+        margin-top: -80px;
+        visibility: hidden;
+    }
+
     .h12,.h13,.h14{font-size: 25px;}
     .h12::before{
         content: "";
