@@ -101,7 +101,7 @@ li{list-style: none;}
         visibility: hidden;
     }
     [id] {
-        scroll-margin-top: 80px;
+        scroll-margin-top: 110px;
     }
 
     .h12,.h13,.h14{font-size: 25px;}
