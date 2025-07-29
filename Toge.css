@@ -75,6 +75,12 @@ li{list-style: none;}
     .pocha{left: 10px; top: 0px;}
     .back{position: absolute; width: 100%; object-fit: cover; height: 500px;}
     .section1{margin-top: 280px;}
+    .section1::before{content: "";
+        display: block;
+        height: 80px;
+        margin-top: -80px;
+        visibility: hidden;
+    }
     .h12,.h13,.h14{font-size: 25px;}
     .h12::before{
         content: "";
